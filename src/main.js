@@ -1,6 +1,6 @@
 import "./style.css";
 import html2canvas from "html2canvas";
-import uniforms from "./uniforms";
+import uniforms from "./uniforms.json";
 
 const root = document.documentElement;
 
