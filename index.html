@@ -1,0 +1,611 @@
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- Primary metadata -->
+    <title>Générateur de joueurs NHL94</title>
+    <meta
+      name="description"
+      content="Microsite permettant de générer des images de joueurs avec l'esthétique du jeu NHL94"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://heysimonarnold.github.io/generateur-de-joueurs-nhl94/"
+    />
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Générateur de joueurs NHL94" />
+    <meta property="og:title" content="Générateur de joueurs NHL94" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      property="og:description"
+      content="Microsite permettant de générer des images de joueurs avec l'esthétique du jeu NHL94"
+    />
+    <meta
+      property="og:url"
+      content="https://heysimonarnold.github.io/generateur-de-joueurs-nhl94/"
+    />
+    <meta
+      property="og:image"
+      content="https://heysimonarnold.github.io/generateur-de-joueurs-nhl94/og-image.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Microsite permettant de générer des images de joueurs avec l'esthétique du jeu NHL94"
+    />
+  </head>
+  <body>
+    <div class="canvas-wrapper">
+    <div class="canvas" id="canvas">
+      <svg
+        version="1.2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 400 400"
+        width="400"
+        height="400"
+        class="player player--right"
+      >
+        <g class="star">
+          <path
+            class="star__filler"
+            d="m319 318v-8h18v-9h18v-10h9v-8h-120v-9h-9v-9h-9v-9h-9v-9h-9v-9h-20v9h-9v9h-9v9h-9v9h-9v9h-117v8h9v10h18v9h18v8h17v9h-9v9h-8v9h-9v8h-10v9h-8v8h-9v9h-9v10h62v-8h27v-9h36v-9h35v-9h9v9h35v9h36v9h35v8h54v-10h-9v-9h-9v-8h-8v-9h-10v-8h-9v-9h-8v-9h-9v-9z"
+          ></path>
+          <path
+            class="star__border"
+            d="m319 318v-8h18v-9h18v-10h9v-8h-120v-9h-9v-9h-9v-9h-9v-9h-9v-9h-20v9h-9v9h-9v9h-9v9h-9v9h-117v8h9v10h18v9h18v8h17v9h-9v9h-8v9h-9v8h-10v9h-8v8h-9v9h-9v10h62v-8h27v-9h36v-9h35v-9h9v9h35v9h36v9h35v8h54v-10h-9v-9h-9v-8h-8v-9h-10v-8h-9v-9h-8v-9h-9v-9zm-26 9v9h8v9h9v9h10v8h8v9h9v8h-17v-8h-36v-9h-35v-9h-36v-9h-27v9h-36v9h-35v9h-36v8h-17v-8h9v-9h8v-8h10v-9h9v-9h8v-9h9v-9h-8v-10h-18v-8h-18v-9h90v-8h9v-9h9v-9h9v-9h9v-9h2v9h9v9h9v9h9v9h8v8h94v9h-18v8h-18v10h-8v9z"
+          ></path>
+        </g>
+        <path
+          class="jersey"
+          d="m269.55 49.77h-76.76v8.47h-9.98v10.43h-8.8v9.44h-9.77v85.69h9.77v19.82h28.78v-19.12l-9.94 0.06-0.06-37.96h10v19.28h96v-10.16h-9.34v-18.39h9.34v-10h9.12v-29.54h-9.12v-9.23h-9.34v-9.99h-19.98z"
+        ></path>
+        <path
+          class="jersey__lower-stripe"
+          d="m289.45 164.75v-9.44h-19.12v9.44h-57.54v9.15h86.11v-9.15z"></path>
+        <path
+          class="jersey__middle-stripe"
+          d="m260.78 145.88v9.43l-47.99 0.01v9.43h57.54v-9.44h19.12v-9.43zm28.67 9.43v9.44h9.45v-9.44z"
+        ></path>
+        <path
+          class="jersey__upper-stripe"
+          d="m212.79 145.88h47.99v9.44h-47.99zm76.66 0v-10.16h-28.67v10.16zm0 0v9.43h9.45l-0.11-9.43z"
+        ></path>
+        <path
+          class="forearms"
+          d="m164.24 145.52h28.59l0.02 19.04 9.94-0.06v9.4h-19.33v9.72h-9.45v-19.82h-9.77zm96.54-9.8v-28.67l9.55 0.01v-10.05h9.56v-9.12h18.9v-10.1h9.12v29.54h-9.12v10h-9.34v9.02l-9.75 0.01v9.37z"
+        ></path>
+        <path
+          class="arms__lower-stripe"
+          d="m164.24 135.72h28.59v9.8h-28.59zm106.09-47.83h9.56v9.12h-9.56zm9.56-10.1h18.9v10.1h-18.9z"
+        ></path>
+        <path
+          class="arms__middle-stripe"
+          d="m164.24 126.6h28.56v9.12h-28.56zm106.09-48.81h9.56v10.1h-9.56zm9.56-9.23h18.9v9.23h-18.9z"
+        ></path>
+        <path
+          class="arms__upper-stripe"
+          d="m164.24 116.34h28.55v10.26h-28.55zm96.54-38.55h9.56v10.1h-9.56zm9.55-9.23h9.56v9.23h-9.56zm9.56-9.99h9.56v9.99h-9.56z"
+        ></path>
+        <path
+          class="shadow"
+          d="m192.79 97.33h10v10h-10zm0 19.01h10v10.26h-10zm10 19.54h10v10h-10zm67.54-9.52h9.37v9.37h-9.37zm9.37-9.03h9.75v9.02h-9.75zm-18.92-10.28h9.56v9.29h-9.56z"
+        ></path>
+        <path
+          class="shoulders"
+          d="m231.67 68.83h29.11v-10.26h8.69l0.08-8.8h-37.88zm-67.43 28.5h9.58v-9.44h9.55v-10.1h19.42v-19.55h-19.98v10.43h-8.8v9.44h-9.77z"
+        ></path>
+        <path
+          class="shadow"
+          d="m270.33 97.01h9.56v10.05h-9.56zm-9.55-9.12h9.56v9.12h-9.56zm-9.6-10.1h9.6v10.1h-9.6z"
+        ></path>
+        <path
+          class="skin"
+          d="m192.79 39.67v28.83h10v9.29h19.27v-8.96h9.61v-29.16z"></path>
+        <path
+          class="helmet"
+          d="m192.79 39.67v-18.9h10v-9.77h28.88v9.77h9.61v37.47h-9.61v-8.47h-9.77v-10.1z"
+        ></path>
+        <path
+          class="shadow"
+          d="m202.79 11h28.88v9.77h-28.88zm28.88 9.77v18.9h-9.77v10.1h9.77v8.47h9.61v-37.47z"
+        ></path>
+        <path class="shadow" d="m221.9 30.33h-19.11v-9.56h-10v18.9h29.11z"
+        ></path>
+        <path
+          class="socks"
+          d="m270.33 231.45h-38.76v29.49l9.66-0.17-0.34 9.45h19v-19.11h10.44zm-58.42 0.6h-9.12v-9.99h-9.99v-9.4h-18.69v38.77h-9.87v18.79h9.87v10.1h18.9v-10.1h9.78v-28.78h9.12z"
+        ></path>
+        <path
+          class="socks__upper-stripe"
+          d="m174.11 232.05h19.29v9.39h-19.29zm19.28 9.39h9.4v9.99h-9.4z"
+        ></path>
+        <path
+          class="socks__lower-stripe"
+          d="m174.11 241.44h19.29v9.99h-19.29zm19.28 9.99h9.4v9.34h-9.4z"
+        ></path>
+        <path
+          class="pants"
+          d="m279.89 173.9h-77.1v9.72h-9.99v9.71h-9.34v9.89h-9.35v9.44h9.35v9.4h19.33v9.99h19.22v-19.39h9.56v-9.01h9.32v9.01h-9.32v18.79h9.32v9.99h29.44v-37.79h9.56z"
+        ></path>
+        <path
+          class="pants__inner-stripe"
+          d="m290.32 173.9h8.58v19.44h-8.58zm-10.43 29.75h10.43v9.02h-10.43zm-9.56 18.41h9.56v9.39h-9.56z"
+        ></path>
+        <path
+          class="pants__outer-stripe"
+          d="m279.89 173.9v29.75h-9.56v18.41h-10.44v19.38h10.44v-19.38h9.56v-18.41h10.43v-29.75z"
+        ></path>
+        <path
+          class="gloves"
+          d="m183.46 173.9v9.72h-9.45v9.71h9.45v9.89h9.34v9.44h19.99v-9.44h9.54v-29.32zm77.32-38.18v-19.38h-19.33v9.77h-9.43v19.77h9.43v9.43h19.33v-9.43h9.55v-10.16z"
+        ></path>
+        <path
+          class="stick"
+          d="m232.02 145.88v9.43h-9.69v9.44h-9.54v9.15h-10v19.38h10v-9.66h9.54v-9.72h9.69v-9.15h9.43v-18.87zm-39.22 47.45h10v9.88h-10zm-9.34 19.33h-9.35v10.02h-9.77v8.77h-9.55v9.99h-9.78v9.99h-9.55v9.4h-9.02v9.64h-9.44v9.85h-10.1v9.34h-9.78v9.96h-77.12v19.09h77.12v-10.15h9.78v-9.56h10.1v-9.61h8.14v-9.29h10.32v-9.88h9.55v-9.45h9.78v-9.34h9.45v-9.99h9.87v-9.39h9.35v-9.99h9.34v-18.84h-9.34z"
+        ></path>
+        <path class="stick__tape" d="m29.76 299.62h57.09v19.09h-57.09z"></path>
+        <path
+          class="blades"
+          d="m145.01 308.56h38.66v10.15h-38.66zm38.66-8.94h9.34v8.93h-9.34zm47.9-0.19h9.72v9.72h-9.72z"
+        ></path>
+        <path
+          class="ice"
+          d="m193.01 299.62v8.94h-9.34v10.15h-38.66v8.52h48v-18.67h9.13v-8.94z"
+        ></path>
+        <path
+          class="ice"
+          d="m135.46 308.56h9.56v10.15h-9.56zm76.45-19.17h9.99v10.05h-9.99zm9.99 10.04h9.67v9.72h-9.67zm9.67 9.72h9.72v9.56h-9.72zm9.71-10.15h9.67v10.15h-9.67zm9.67-9.61h10.05v10.05h-10.05zm-230.95 29.32h77.12v8.52h-77.12zm77.12-10.15h9.78v10.15h-9.78z"
+        ></path>
+        <path
+          class="skates"
+          d="m241.23 270.22v-9.45h-19.33v38.66h29.05v-29.21zm-48.22 10.1h-18.9v-10.1h-9.87l0.1 19.22h-19.33v19.12h38.66v-8.94h9.34z"
+        ></path>
+      </svg>
+
+      <svg
+        version="1.2"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 400 400"
+        width="400"
+        height="400"
+        class="player player--left"
+      >
+        <g class="star">
+          <path
+            class="star__filler"
+            d="m74 318v-8h-18v-9h-18v-10h-9v-8h120v-9h9v-9h9v-9h9v-9h9v-9h20v9h9v9h9v9h9v9h9v9h117v8h-9v10h-18v9h-18v8h-17v9h9v9h8v9h9v8h10v9h8v8h9v9h9v10h-62v-8h-27v-9h-36v-9h-35v-9h-9v9h-35v9h-36v9h-35v8h-54v-10h9v-9h9v-8h8v-9h10v-8h9v-9h8v-9h9v-9z"
+          ></path>
+          <path
+            class="star__border"
+            d="m74 318v-8h-18v-9h-18v-10h-9v-8h120v-9h9v-9h9v-9h9v-9h9v-9h20v9h9v9h9v9h9v9h9v9h117v8h-9v10h-18v9h-18v8h-17v9h9v9h8v9h9v8h10v9h8v8h9v9h9v10h-62v-8h-27v-9h-36v-9h-35v-9h-9v9h-35v9h-36v9h-35v8h-54v-10h9v-9h9v-8h8v-9h10v-8h9v-9h8v-9h9v-9zm26 9v9h-8v9h-9v9h-10v8h-8v9h-9v8h17v-8h36v-9h35v-9h36v-9h27v9h36v9h35v9h36v8h17v-8h-9v-9h-8v-8h-10v-9h-9v-9h-8v-9h-9v-9h8v-10h18v-8h18v-9h-90v-8h-9v-9h-9v-9h-9v-9h-9v-9h-2v9h-9v9h-9v9h-9v9h-8v8h-94v9h18v8h18v10h8v9z"
+          ></path>
+        </g>
+        <path
+          class="jersey"
+          d="m123.45 49.77h76.76v8.47h9.98v10.43h8.8v9.44h9.77v85.69h-9.77v19.82h-28.78v-19.12l9.94 0.06 0.06-37.96h-10v19.28h-96v-10.16h9.34v-18.39h-9.34v-10h-9.12v-29.54h9.12v-9.23h9.34v-9.99h19.98z"
+        ></path>
+        <path
+          class="jersey__lower-stripe"
+          d="m103.55 164.75v-9.44h19.12v9.44h57.54v9.15h-86.11v-9.15z"></path>
+        <path
+          class="jersey__middle-stripe"
+          d="m132.22 145.88v9.43l47.99 0.01v9.43h-57.54v-9.44h-19.12v-9.43zm-28.67 9.43v9.44h-9.45v-9.44z"
+        ></path>
+        <path
+          class="jersey__upper-stripe"
+          d="m180.21 145.88h-47.99v9.44h47.99zm-76.66 0v-10.16h28.67v10.16zm0 0v9.43h-9.45l0.11-9.43z"
+        ></path>
+        <path
+          class="forearms"
+          d="m228.76 145.52h-28.59l-0.02 19.04-9.94-0.06v9.4h19.33v9.72h9.45v-19.82h9.77zm-96.54-9.8v-28.67l-9.55 0.01v-10.05h-9.56v-9.12h-18.9v-10.1h-9.12v29.54h9.12v10h9.34v9.02l9.75 0.01v9.37z"
+        ></path>
+        <path
+          class="arms__lower-stripe"
+          d="m228.76 135.72h-28.59v9.8h28.59zm-106.09-47.83h-9.56v9.12h9.56zm-9.56-10.1h-18.9v10.1h18.9z"
+        ></path>
+        <path
+          class="arms__middle-stripe"
+          d="m228.76 126.6h-28.56v9.12h28.56zm-106.09-48.81h-9.56v10.1h9.56zm-9.56-9.23h-18.9v9.23h18.9z"
+        ></path>
+        <path
+          class="arms__upper-stripe"
+          d="m228.76 116.34h-28.55v10.26h28.55zm-96.54-38.55h-9.56v10.1h9.56zm-9.55-9.23h-9.56v9.23h9.56zm-9.56-9.99h-9.56v9.99h9.56z"
+        ></path>
+        <path
+          class="shadow"
+          d="m200.21 97.33h-10v10h10zm0 19.01h-10v10.26h10zm-10 19.54h-10v10h10zm-67.54-9.52h-9.37v9.37h9.37zm-9.37-9.03h-9.75v9.02h9.75zm18.92-10.28h-9.56v9.29h9.56z"
+        ></path>
+        <path
+          class="shoulders"
+          d="m161.33 68.83h-29.11v-10.26h-8.69l-0.08-8.8h37.88zm67.43 28.5h-9.58v-9.44h-9.55v-10.1h-19.42v-19.55h19.98v10.43h8.8v9.44h9.77z"
+        ></path>
+        <path
+          class="shadow"
+          d="m122.67 97.01h-9.56v10.05h9.56zm9.55-9.12h-9.56v9.12h9.56zm9.6-10.1h-9.6v10.1h9.6z"
+        ></path>
+        <path
+          class="skin"
+          d="m200.21 39.67v28.83h-10v9.29h-19.27v-8.96h-9.61v-29.16z"></path>
+        <path
+          class="helmet"
+          d="m200.21 39.67v-18.9h-10v-9.77h-28.88v9.77h-9.61v37.47h9.61v-8.47h9.77v-10.1z"
+        ></path>
+        <path
+          class="shadow"
+          d="m190.21 11h-28.88v9.77h28.88zm-28.88 9.77v18.9h9.77v10.1h-9.77v8.47h-9.61v-37.47z"
+        ></path>
+        <path class="shadow" d="m171.1 30.33h19.11v-9.56h10v18.9h-29.11z"
+        ></path>
+        <path
+          class="socks"
+          d="m122.67 231.45h38.76v29.49l-9.66-0.17 0.34 9.45h-19v-19.11h-10.44zm58.42 0.6h9.12v-9.99h9.99v-9.4h18.69v38.77h9.87v18.79h-9.87v10.1h-18.9v-10.1h-9.78v-28.78h-9.12z"
+        ></path>
+        <path
+          class="socks__upper-stripe"
+          d="m218.89 232.05h-19.29v9.39h19.29zm-19.28 9.39h-9.4v9.99h9.4z"
+        ></path>
+        <path
+          class="socks__lower-stripe"
+          d="m218.89 241.44h-19.29v9.99h19.29zm-19.28 9.99h-9.4v9.34h9.4z"
+        ></path>
+        <path
+          class="pants"
+          d="m113.11 173.9h77.1v9.72h9.99v9.71h9.34v9.89h9.35v9.44h-9.35v9.4h-19.33v9.99h-19.22v-19.39h-9.56v-9.01h-9.32v9.01h9.32v18.79h-9.32v9.99h-29.44v-37.79h-9.56z"
+        ></path>
+        <path
+          class="pants__inner-stripe"
+          d="m102.68 173.9h-8.58v19.44h8.58zm10.43 29.75h-10.43v9.02h10.43zm9.56 18.41h-9.56v9.39h9.56z"
+        ></path>
+        <path
+          class="pants__outer-stripe"
+          d="m113.11 173.9v29.75h9.56v18.41h10.44v19.38h-10.44v-19.38h-9.56v-18.41h-10.43v-29.75z"
+        ></path>
+        <path
+          class="gloves"
+          d="m209.54 173.9v9.72h9.45v9.71h-9.45v9.89h-9.34v9.44h-19.99v-9.44h-9.54v-29.32zm-77.32-38.18v-19.38h19.33v9.77h9.43v19.77h-9.43v9.43h-19.33v-9.43h-9.55v-10.16z"
+        ></path>
+        <path
+          class="stick"
+          d="m160.98 145.88v9.43h9.69v9.44h9.54v9.15h10v19.38h-10v-9.66h-9.54v-9.72h-9.69v-9.15h-9.43v-18.87zm39.22 47.45h-10v9.88h10zm9.34 19.33h9.35v10.02h9.77v8.77h9.55v9.99h9.78v9.99h9.55v9.4h9.02v9.64h9.44v9.85h10.1v9.34h9.78v9.96h77.12v19.09h-77.12v-10.15h-9.78v-9.56h-10.1v-9.61h-8.14v-9.29h-10.32v-9.88h-9.55v-9.45h-9.78v-9.34h-9.45v-9.99h-9.87v-9.39h-9.35v-9.99h-9.34v-18.84h9.34z"
+        ></path>
+        <path class="s0" d="m363.24 299.62h-57.09v19.09h57.09z"></path>
+        <path
+          class="blades"
+          d="m247.99 308.56h-38.66v10.15h38.66zm-38.66-8.94h-9.34v8.93h9.34zm-47.9-0.19h-9.72v9.72h9.72z"
+        ></path>
+        <path
+          class="ice"
+          d="m199.99 299.62v8.94h9.34v10.15h38.66v8.52h-48v-18.67h-9.13v-8.94z"
+        ></path>
+        <path
+          class="ice"
+          d="m257.54 308.56h-9.56v10.15h9.56zm-76.45-19.17h-9.99v10.05h9.99zm-9.99 10.04h-9.67v9.72h9.67zm-9.67 9.72h-9.72v9.56h9.72zm-9.71-10.15h-9.67v10.15h9.67zm-9.67-9.61h-10.05v10.05h10.05zm230.95 29.32h-77.12v8.52h77.12zm-77.12-10.15h-9.78v10.15h9.78z"
+        ></path>
+        <path
+          class="skates"
+          d="m151.77 270.22v-9.45h19.33v38.66h-29.05v-29.21zm48.22 10.1h18.9v-10.1h9.87l-0.1 19.22h19.33v19.12h-38.66v-8.94h-9.34z"
+        ></path>
+
+        <div class="player__infos">13&thinsp;R</div>
+      </svg>
+    </div>
+  </div>
+
+  <nav class="board">
+    <div class="infos">
+      <fieldset class="infos__group" data-var="skin" data-dom="skin">
+        <legend class="infos__legend">Skin</legend>
+        <div class="swatches-group skin-group">
+          <button class="swatch skin-1" data-color="1"></button>
+          <button class="swatch skin-2 is-selected" data-color="2"></button>
+          <button class="swatch skin-3" data-color="3"></button>
+          <button class="swatch skin-4" data-color="4"></button>
+          <button class="swatch skin-5" data-color="5"></button>
+        </div>
+      </fieldset>
+
+      <fieldset class="infos__group">
+        <legend class="infos__legend">Star</legend>
+        <div class="swatches-group star-group">
+          <button class="swatch star-blue is-selected" data-color="blue"
+          ></button>
+          <button class="swatch star-red" data-color="red"></button>
+          <button class="swatch star-green" data-color="green"></button>
+          <button class="swatch star-yellow" data-color="yellow"></button>
+        </div>
+      </fieldset>
+
+      <fieldset class="infos__group">
+        <legend class="infos__legend">Handeness</legend>
+        <select name="handness">
+          <option value="l">Left</option>
+          <option value="r" selected>Right</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="infos__group infos__group--flex">
+        <legend class="infos__legend">Number & Position</legend>
+        <input name="nbr" type="number" min="1" max"99" value="13" />
+        <select name="pos">
+          <option value="l">Left wing</option>
+          <option value="c">Center</option>
+          <option value="r" selected>Right wing</option>
+          <option value="d">Defense</option>
+        </select>
+      </fieldset>
+
+      <fieldset class="infos__group">
+        <legend class="infos__legend">Uniform</legend>
+        <select name="uniforms">
+          <optgroup label="MTL">
+            <option value="15-0">MTL Home</option>
+          </optgroup>
+        </select>
+      </fieldset>
+    </div>
+
+    <details class="gear">
+      <summary class="gear__summary"
+        >or create a <u>Custom Uniform</u> <small>(optional)</small></summary
+      >
+
+      <div class="gear__wrapper">
+        <!--=== General ==================-->
+        <fieldset class="gear__group">
+          <legend class="gear__legend">General</legend>
+
+          <input type="text" name="name" placeholder="Team name" />
+
+          <div class="main-colors" data-ref="m">
+            <div class="swatches-group">
+              <input type="color" class="color-1" value="#d74800" />
+              <input type="color" class="color-2" value="#e0b800" />
+              <input type="color" class="color-3" value="#e8e9e7" />
+            </div>
+            Main colors
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="helmet"
+            data-dom="helmet"
+            data-ref="h"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Helmet
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="gloves"
+            data-dom="gloves"
+            data-ref="g"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Gloves
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="gear__group">
+          <legend class="gear__legend">Jersey</legend>
+
+          <!--=== Jersey ==================-->
+          <div
+            class="gear__item"
+            data-var="jersey"
+            data-dom="jersey"
+            data-ref="j"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Color
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="shoulders"
+            data-dom="shoulders"
+            data-ref="sh"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Shoulders
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="jersey-upper-stripe"
+            data-dom="jersey__upper-stripe"
+            data-ref="jus"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Upper stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="jersey-middle-stripe"
+            data-dom="jersey__middle-stripe"
+            data-ref="jms"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Middle stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="jersey-lower-stripe"
+            data-dom="jersey__lower-stripe"
+            data-ref="jls"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Lower stripe
+            </label>
+          </div>
+        </fieldset>
+
+        <!--=== Arms ==================-->
+        <fieldset class="gear__group">
+          <legend class="gear__legend">Arms</legend>
+
+          <div
+            class="gear__item"
+            data-var="arm-upper-stripe"
+            data-dom="arms__upper-stripe"
+            data-ref="aus"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Upper stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="arm-middle-stripe"
+            data-dom="arms__middle-stripe"
+            data-ref="ams"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Middle stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="arm-lower-stripe"
+            data-dom="arms__lower-stripe"
+            data-ref="als"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Lower stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="forearms"
+            data-dom="forearms"
+            data-ref="f"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Forearms
+            </label>
+          </div>
+        </fieldset>
+
+        <!--=== Pants ==================-->
+        <fieldset class="gear__group">
+          <legend class="gear__legend">Pants</legend>
+
+          <div
+            class="gear__item"
+            data-var="pants"
+            data-dom="pants"
+            data-ref="p"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Color
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="pants-outer-stripe"
+            data-dom="pants__outer-stripe"
+            data-ref="pos"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Outer stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="pants-inner-stripe"
+            data-dom="pants__inner-stripe"
+            data-ref="pis"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Inner stripe
+            </label>
+          </div>
+        </fieldset>
+
+        <!--=== Socks ==================-->
+        <fieldset class="gear__group">
+          <legend class="gear__legend">Socks</legend>
+
+          <div
+            class="gear__item"
+            data-var="socks"
+            data-dom="socks"
+            data-ref="s"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Color
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="socks-upper-stripe"
+            data-dom="socks__upper-stripe"
+            data-ref="sus"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Upper stripe
+            </label>
+          </div>
+
+          <div
+            class="gear__item"
+            data-var="socks-lower-stripe"
+            data-dom="socks__lower-stripe"
+            data-ref="sls"
+          >
+            <label class="gear__label">
+              <input type="color" />
+              Lower stripe
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    </details>
+
+    <button id="download-btn">Download</button>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

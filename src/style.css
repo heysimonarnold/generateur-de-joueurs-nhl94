@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Tiny5&display=swap");
+
+:root {
+  --skin-1: #f4d4bb;
+  --skin-2: #dbba91;
+  --skin-3: #dba974;
+  --skin-4: #bd8049;
+  --skin-5: #855227;
+  --stick: #977125;
+  --skates: #000;
+  --ice: #4a8fb1;
+  --star-blue: #021951;
+  --star-red: #df2d39;
+  --star-green: #2c9075;
+  --star-yellow: #f6ae2d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #c0e0f8;
+  margin: 0;
+  display: flex;
+  font-size: 16px;
+  font-family: "Tiny5", monospace;
+  flex-direction: column;
+  height: 100dvh;
+}
+
+.skin-1 {
+  background-color: var(--skin-1);
+}
+
+.skin-2 {
+  background-color: var(--skin-2);
+}
+
+.skin-3 {
+  background-color: var(--skin-3);
+}
+
+.skin-4 {
+  background-color: var(--skin-4);
+}
+
+.skin-5 {
+  background-color: var(--skin-5);
+}
+
+[type="text"],
+[type="number"],
+select {
+  height: 23px;
+  font-size: 1em;
+  font-family: inherit;
+  width: 100%;
+}
+
+[type="number"] {
+  width: 3em;
+}
+
+[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: solid 1px #010101;
+  width: 22px;
+  height: 22px;
+  display: inline-block;
+  position: relative;
+}
+[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 3px 2px;
+}
+[type="color"]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border: solid 1px #000;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+}
+[type="color"].is-selected::after {
+  opacity: 1;
+}
+
+.swatches {
+  display: flex;
+}
+
+.swatches-group {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.swatch {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  width: 22px;
+  height: 22px;
+  display: block;
+  border: solid 1px #010101;
+  box-shadow: inset 0 0 0 4px #efefef;
+  vertical-align: middle;
+  margin: 0;
+}
+.swatch::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  border: solid 1px #000;
+  background-color: #fff;
+  opacity: 0;
+  pointer-events: none;
+}
+.swatch.is-selected::after {
+  opacity: 1;
+}
+
+.c1 {
+  background-color: var(--color-1);
+}
+
+.c2 {
+  background-color: var(--color-2);
+}
+
+.c3 {
+  background-color: var(--color-3);
+}
+
+.canvas-wrapper {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.canvas {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  width: auto;
+  height: calc(100% - 40px);
+  overflow: visible;
+  text-align: center;
+}
+
+.star-blue {
+  background-color: var(--star-blue);
+}
+.star-red {
+  background-color: var(--star-red);
+}
+.star-green {
+  background-color: var(--star-green);
+}
+.star-yellow {
+  background-color: var(--star-yellow);
+}
+.star__filler {
+  fill: #7dbef0;
+}
+.star__border {
+  fill: var(--star-blue);
+}
+
+.player {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.player--right.is-lefty,
+.player--left {
+  display: none;
+}
+
+.player--left.is-lefty,
+.player--right {
+  display: block;
+}
+
+.player__infos {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  font-family: inherit;
+  color: #dcd7db;
+  text-shadow: 0.05em 0.05em 0 #898989;
+  text-transform: uppercase;
+}
+
+.skin {
+  fill: var(--skin-2);
+}
+
+.arms__upper-stripe {
+  fill: var(--arm-upper-stripe);
+}
+.arms__middle-stripe {
+  fill: var(--arm-middle-stripe);
+}
+.arms__lower-stripe {
+  fill: var(--arm-lower-stripe);
+}
+
+.forearms {
+  fill: var(--forearms);
+}
+
+.jersey {
+  fill: var(--jersey);
+}
+.jersey__upper-stripe {
+  fill: var(--jersey-upper-stripe);
+}
+.jersey__middle-stripe {
+  fill: var(--jersey-middle-stripe);
+}
+.jersey__lower-stripe {
+  fill: var(--jersey-lower-stripe);
+}
+
+.shoulders {
+  fill: var(--shoulders);
+}
+
+.helmet {
+  fill: var(--helmet);
+}
+
+.socks {
+  fill: var(--socks);
+}
+.socks__upper-stripe {
+  fill: var(--socks-upper-stripe);
+}
+.socks__lower-stripe {
+  fill: var(--socks-lower-stripe);
+}
+
+.pants {
+  fill: var(--pants);
+}
+.pants__outer-stripe {
+  fill: var(--pants-outer-stripe);
+}
+.pants__inner-stripe {
+  fill: var(--pants-inner-stripe);
+}
+
+.gloves {
+  fill: var(--gloves);
+}
+
+.stick {
+  fill: var(--stick);
+}
+.stick__tape {
+  fill: #000;
+}
+
+.skates {
+  fill: var(--skates);
+}
+
+.blades {
+  fill: #d8d8d8;
+}
+
+.ice {
+  fill: var(--ice);
+}
+
+.shadow {
+  background-color: #000;
+  opacity: 0.3;
+}
+
+nav {
+  flex: 0 0 auto;
+  background-color: #010101;
+  color: #fff;
+  font-size: 1em;
+  font-family: inherit;
+  padding: 16px 0;
+}
+
+.main-colors__group {
+  display: inline-flex;
+}
+
+.gear__summary {
+  position: relative;
+  width: 100%;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.4;
+  font-size: 1em;
+  padding: 8px 16px;
+}
+
+.infos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.infos__group {
+  margin: 5px;
+}
+.infos__group input + input,
+.infos__group input + select {
+  margin-left: 5px;
+}
+.infos__group--flex {
+  display: flex;
+}
+.infos__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gear__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gear__group {
+  margin: 5px;
+}
+.gear__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset {
+  width: 220px;
+}
+
+#download-btn {
+  cursor: pointer;
+  font-family: "Tiny5", monospace;
+  font-size: 1em;
+  margin: 0 15px;
+  width: calc(100% - 30px);
+}
+
+@media (min-width: 550px) {
+  body {
+    flex-direction: row;
+  }
+
+  .canvas {
+    height: auto;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .board {
+    height: 100%;
+    flex: 0 0 240px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-gutter: stable;
+  }
+
+  .infos,
+  .gear__wrapper {
+    flex-direction: column;
+  }
+
+  .gear__summary {
+    text-align: left;
+  }
+
+  .player__infos {
+    font-size: clamp(15px, 5vw, 40px);
+  }
+}
